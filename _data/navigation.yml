@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "博客"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Our Blogs"
+    url: https://bwstor.com/blog/
 
-  - title: "转载"
-    url: https://mmistakes.github.io/minimal-mistakes/
+  - title: "Reprint Articles"
+    url: https://bwstor.com/article/
 
-  - title: "关于我们"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+  - title: "About Us"
+    url: https://bwstor.com/aboutus/
