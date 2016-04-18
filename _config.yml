@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "中科蓝鲸数据研究中心"
+title                    : "bwstorlab"
 title_separator          : "-"
-name                     : "中科蓝鲸数据研究中心"
+name                     : "bwstorlab"
 description              : "专注于存储技术"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -63,7 +63,7 @@ google_ad_slot           :
 author:
   name             : "BWStorlab"
   avatar           : "bwstorlab.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Storage technology"
   location         : "北京市海淀区清枫华景园"
   email            :
   uri              :
