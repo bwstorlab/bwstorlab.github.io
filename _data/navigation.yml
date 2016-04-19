@@ -1,10 +1,10 @@
 # main links links
 main:
   - title: "Our Blogs"
-    url: https://bwstor.com/blog/
+    url: blog/
 
   - title: "Reprint Articles"
-    url: https://bwstor.com/article/
+    url: /article/
 
   - title: "About Us"
-    url: https://bwstor.com/aboutus/
+    url: /aboutus/
