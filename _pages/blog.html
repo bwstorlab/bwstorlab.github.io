@@ -11,6 +11,8 @@ author_profile: false
 {% for category in group_names %}
   {% if category == 'blog' %}
     <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+  {% endif %}
+  {% if category == 'blog' %}
     {% for post in posts %}
       {% include archive-single.html %}
     {% endfor %}
