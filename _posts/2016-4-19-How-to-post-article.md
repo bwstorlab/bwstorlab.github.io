@@ -10,12 +10,15 @@ tags:
   - markup
 ---
 
-##Step 1
+## Step 1
 Go to [here](https://github.com/bwstorlab/bwstorlab.github.io/new/master/_posts)
-##Step 2
+
+## Step 2
 Name this article like `2016-4-19-hello-world.md` (year-month-date-title)
-##Step 3
+
+## Step 3
 Make sure your article begin with the following part:
+
 ```
 ---
 title: "Edge Case: Nested and Mixed Lists"
