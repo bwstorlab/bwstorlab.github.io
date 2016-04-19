@@ -6,6 +6,7 @@ categories:
 
 ## Step 1
 Go to [here](https://github.com/bwstorlab/bwstorlab.github.io/new/master/_posts)
+
 `Only team members can post articles`
 
 ## Step 2
@@ -29,7 +30,9 @@ You can write your content here(use markdown).
 
 ```
 `title` is the title of your article
+
 `categories` can be `blog` or `reprint`
+
 `tags` can be any words related to your article.
 
 ## Step 4
