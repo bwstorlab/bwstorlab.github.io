@@ -4,7 +4,7 @@ title: About
 permalink: /aboutus/
 ---
 
-![mahua](images/bwstorlab.png)
+![mahua](../images/bwstorlab.png)
 
 ## Who are we?
 A [lab](http://www.ict.ac.cn/jgsz/kyxt/sjcc/)(of [ICT](http://www.ict.ac.cn/)) focus on storage technology.
