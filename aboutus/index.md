@@ -1,6 +1,6 @@
 ---
 layout: single
-title: About
+title: About us
 ---
 
 ![mahua](../images/bwstorlab.png)
