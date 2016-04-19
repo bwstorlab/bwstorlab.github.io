@@ -1,13 +1,7 @@
 ---
 title: "How to post an article"
 categories:
-  - Edge Case
-tags:
-  - content
-  - css
-  - edge case
-  - lists
-  - markup
+  - blog
 ---
 
 ## Step 1
@@ -24,20 +18,17 @@ Make sure your article begin with the following part:
 ---
 title: "Edge Case: Nested and Mixed Lists"
 categories:
-  - Edge Case
+  - blog
 tags:
-  - content
-  - css
-  - edge case
-  - lists
-  - markup
+  - markdown
+  - newpost
 ---
 
 You can write your content here(use markdown).
 
 ```
 `title` is the title of your article
-`categories` can be blog` or `reprint`
+`categories` can be `blog` or `reprint`
 `tags` can be any words related to your article.
 
 ## Markdown syntax
