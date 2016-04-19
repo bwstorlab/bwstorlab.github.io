@@ -1,7 +1,5 @@
 ---
 layout: single
-title: About
-permalink: /aboutus/
 ---
 
 ![mahua](../images/bwstorlab.png)
