@@ -1,5 +1,5 @@
 ---
-title: "Edge Case: Nested and Mixed Lists"
+title: "How to post an article"
 categories:
   - Edge Case
 tags:
@@ -9,6 +9,7 @@ tags:
   - lists
   - markup
 ---
+
 ##Step 1
 Go to [here](https://github.com/bwstorlab/bwstorlab.github.io/new/master/_posts)
 ##Step 2
