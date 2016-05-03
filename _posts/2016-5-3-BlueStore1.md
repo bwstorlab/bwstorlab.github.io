@@ -1,5 +1,5 @@
 ---
-title: "BlueStore(1)--an implementation of ObjectStore"
+title: "BlueStore(1)--An implementation of ObjectStore"
 categories:
   - blog
 tags:
