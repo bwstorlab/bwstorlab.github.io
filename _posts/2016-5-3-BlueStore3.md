@@ -11,7 +11,7 @@ tags:
 
 ## Single write...?
 
-#### asic Idea:
+### Basic Idea:
 
 When we want an overwrite,the basic idea to void journal to guarantee the consistency of data is simple:write the data to another space and then change the meta data:
 
@@ -64,7 +64,7 @@ Logically,overlays byte data(stored in Rocksdb) covers extends byte data(on disk
 
 The read process first skips the extends and overlays which are beyond the read range.Then reads the overlays and extends segment by segment to buffer.
 
-#### Object clone(COW)
+### Object clone(COW)
 
 If COW is set in configuration,copy the Onode and overlay byte data of the source Object for a new one,and add a `SHARE` flag to each extent.
 
