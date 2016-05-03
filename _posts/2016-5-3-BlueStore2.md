@@ -25,6 +25,7 @@ Acknowledgements are therefore done in bulk when the FileStore decides to sync.
 ![](http://irq0.org/articles/ceph/_img/ceph_journal_no.png)
 
 Becuase there is no filesystems that provide `atomic` writes/updates and given that `O_ATOMIC` never made it into the Kernel.So a hardware failure when doing some overwrites using this mode may lead to dirty data.
+
 ![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226517481.png)
 
 ### Writeahead
