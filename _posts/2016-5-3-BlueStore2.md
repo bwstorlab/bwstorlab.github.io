@@ -73,6 +73,8 @@ Traditional enterprise SATA disks can support about 110 MB/sec for a sequential 
 
 In the past,we can only using an individual SSD disk to hold the journal to get better performance,now, we have another choice -- **BlueStore**.
 
+### Reference
+
 [Ceph OSD Journal](http://irq0.org/articles/ceph/journal)
 
 [Ceph performance: interesting things going on](http://www.sebastien-han.fr/blog/2013/12/02/ceph-performance-interesting-things-going-on/)
