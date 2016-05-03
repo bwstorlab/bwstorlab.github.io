@@ -57,6 +57,7 @@ The `on_applied` and `on_applied_sync` callbacks are invoked when the modificati
 NB, `on_applied` and `on_applied_sync` are sometimes called `on_readable` and `on_readable_sync`.  The `on_commit` callback is also called from the Finisher thread and indicates that all of the mutations have been durably committed to stable storage (i.e., are now software/hardware crashproof).
 
 The operations supported by ObjectStore:
+
 ```c
       OP_NOP =          0,
       OP_TOUCH =        9,   // cid, oid
