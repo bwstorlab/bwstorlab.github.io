@@ -11,7 +11,7 @@ tags:
 
 ## Single write...?
 
-####Basic Idea:
+#### asic Idea:
 
 When we want an overwrite,the basic idea to void journal to guarantee the consistency of data is simple:write the data to another space and then change the meta data:
 
@@ -22,7 +22,7 @@ When we want an overwrite,the basic idea to void journal to guarantee the consis
 
 ![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226628471.png)
 
-####Byte extends or block extends?
+### Byte extends or block extends?
 
 If we only use byte extends to store the data of a Object,after many overwrites,they can turn into many small fragments,making it difficult to read,and use much extra space to store the meta data.
 
@@ -41,7 +41,7 @@ Otherwise,write it into writeahead log(then asynchronously commit to disk).
 
 ![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226628612.png)
 
-#### Objects on disk
+### Objects on disk
 
 So,an `Object ` contains:
 * Meta data (list of extends and overlays) (Rocksdb)
@@ -52,7 +52,7 @@ Like inode in filesystem,the meta data of an Object is stored in a struct called
 
 ![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226628802.png)
 
-#### Read operation
+### Read operation
 
 When reading an Object(partly),firstly,get the Onode information:first look up it in the Onode LRU cache memory,if not found,apply an Rocksdb query with the Object's name.
 
@@ -70,7 +70,7 @@ If COW is set in configuration,copy the Onode and overlay byte data of the sourc
 
 ![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226628985.png)
 
-#### Write operation
+### Write operation
 
 Write operation is a bit complicate.Write process has to care serveral things:
 * Head and tail
@@ -88,7 +88,7 @@ It's worth mentioning that,in BlueStore,before WAL,all the overlays have to  be 
 
 ![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226629062.png)
 
-#### extent/overlay trim
+### extent/overlay trim
 
 In writing process,when writing a new extent or overlay,an old extent may be trimmed,splitted or removed:
 
