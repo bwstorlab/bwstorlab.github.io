@@ -9,7 +9,6 @@ tags:
   - journal
 ---
 
-# BlueStore(1)--an implementation of ObjectStore
 The BlueStore(also called `NewStore` before) is an implementation of **ObjectStore** like **FileStore**. With the help of BlueStore, objects are now stored **directly** on the block device, **without** any filesystem interface.
 ### What does ObjectStore store?
 In Ceph,ObjectStore stores data of Objects and Collections.
