@@ -10,6 +10,7 @@ tags:
   - WAL
 ---
 
+
 **FileStore** is the most widely-used **ObjectStore** in Ceph.However,the journal used in FileStore may become a bottleneck for writing.
 
 The journal can be used in different modes by the FileStore.Commonly used modes are `writeahead` (ext4, XFS) and `parallel` (Btrfs).
@@ -24,7 +25,8 @@ Acknowledgements are therefore done in bulk when the FileStore decides to sync.
 ![](http://irq0.org/articles/ceph/_img/ceph_journal_no.png)
 
 Becuase there is no filesystems that provide `atomic` writes/updates and given that `O_ATOMIC` never made it into the Kernel.So a hardware failure when doing some overwrites using this mode may lead to dirty data.
-![](../images/no journal.png)
+![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226517481.png)
+
 ### Writeahead
 
 Write transactions to journal and once it is committed schedule the transaction and acknowledge.
@@ -33,26 +35,26 @@ This mode is for write in place filesystems like XFS and ext4.
 
 A file on disk stores commit_op_seq, the sequence number of the journal entry from which a replay would start. It is incremented on every sync.
 
-![](../images/WAL.png)
+![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226517516.png)
 
 When the system starts up,it first read the journal,and `redo` these entries that has not been commit.
 
-![](../images/WAL2.png)
+![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226517527.png)
 
 Sometimes,journal entries may be incorrect,Ceph use a CRC32C checksum to verify the correctness of the journal entries.
 
 
-![](../images/WAL4.png)
+![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226517537.png)
 
 ### Parallel
 Journal and schedule transactions at the same time. This mode is designed for copy on write filesystems like Btrfs. They provide a stable snapshot to rollback to.
 
 
-![](../images/WAL5.png)
+![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226518718.png)
 
 On a journal replay the current, dirty filesystem is rolled back to the previous snapshot. This snapshot plus the journal entries would then lead to a consistent state.
 
-![](parallel remount.png)
+![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146226517499.png)
 
 ### Tailing
 
