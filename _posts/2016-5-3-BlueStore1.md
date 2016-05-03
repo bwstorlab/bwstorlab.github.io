@@ -60,7 +60,7 @@ NB, `on_applied` and `on_applied_sync` are sometimes called `on_readable` and `o
 
 The operations supported by ObjectStore:
 
-```c
+```c++
       OP_NOP =          0,
       OP_TOUCH =        9,   // cid, oid
       OP_WRITE =        10,  // cid, oid, offset, len, bl
@@ -113,7 +113,7 @@ The operations supported by ObjectStore:
 
 ObjectStore has the following functions for reading,call it directly.
 
-```
+```c++
 //exists -- Test for existance of object
 bool exists (cid,oid);
 
