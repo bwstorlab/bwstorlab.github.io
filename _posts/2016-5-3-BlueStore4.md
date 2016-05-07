@@ -29,11 +29,12 @@ StupidAllocator keeps several(about 10) freelists.The length of free blocks in f
 
 When we want an extent of `len` from `hint`,StupidAllocator tries to ensure the continuity of the extend to be allocated.And gives priority to ensuring it's location is after `hint`.
 
-![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146228964547.png)
+![](http://cooljiansir.oss-cn-beijing.aliyuncs.com/bwlab/allocator1.png)
+
 #### Deallocation
 
 StupidAllocator first add the free space to the right freelist.Then,the free block with some adjacent blocks may come into a bigger one and may be move to another freelist(promote).
 
-![](http://cezvf.img47.wal8.com/img47/544731_20160503164529/146228964565.png)
+![](http://cooljiansir.oss-cn-beijing.aliyuncs.com/bwlab/allocator3.png)
 
 
