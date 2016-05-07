@@ -10,7 +10,6 @@ tags:
   - WAL
 ---
 
-#BlueStore(2)--Pain of FileStore
 **FileStore** is the most widely-used **ObjectStore** in Ceph.However,the journal used in FileStore may become a bottleneck for writing.
 
 The journal can be used in different modes by the FileStore.Commonly used modes are `writeahead` (ext4, XFS) and `parallel` (Btrfs).
