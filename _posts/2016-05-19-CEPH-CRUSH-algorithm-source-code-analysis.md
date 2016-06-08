@@ -1,10 +1,7 @@
 ---
-layout:     post
-title:      CEPH CRUSH algorithm source code analysis
-date:	    2016-5-19
-summary:    CRUSH algorithm analysis
-categories: Original
-thumbnail:  cogs
+title: "CEPH CRUSH algorithm source code analysis"
+categories:
+  - blog
 tags:
  - CEPH
  - CRUSH
